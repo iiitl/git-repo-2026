@@ -4,4 +4,4 @@ Welcome to our Hall of Fame! Add your name below as part of your first PR.
 
 | Name | GitHub Profile | Favorite Language |
 | :--- | :--- | :--- |
-| Your Name | [@yourusername](https://github.com/yourusername) | markdown |
+| Samruddhi More | [@samruddhimore27](https://github.com/samruddhimore27) | C++ |
