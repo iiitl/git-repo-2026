@@ -4,4 +4,4 @@ Welcome to our Hall of Fame! Add your name below as part of your first PR.
 
 | Name | GitHub Profile | Favorite Language |
 | :--- | :--- | :--- |
-| Your Name | [@yourusername](https://github.com/yourusername) | markdown |
+| Khushi Patil | [@kpflow369](https://github.com/kpflow369) | Python |
