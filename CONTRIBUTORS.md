@@ -4,4 +4,4 @@ Welcome to our Hall of Fame! Add your name below as part of your first PR.
 
 | Name | GitHub Profile | Favorite Language |
 | :--- | :--- | :--- |
-| Your Name | [@yourusername](https://github.com/yourusername) | markdown |
+| Arshaan Baig | [@arshaanbaig69](https://github.com/arshaanbaig69) | Solidity |
