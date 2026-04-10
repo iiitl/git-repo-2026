@@ -1,2 +1,5 @@
 # hello.py
-print("Hello, world! I am branching out.")
+def fetchData():
+    print("Hello, world! I am branching out.")
+
+fetchData()
