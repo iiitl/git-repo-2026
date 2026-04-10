@@ -2,6 +2,6 @@
 
 Welcome to our Hall of Fame! Add your name below as part of your first PR.
 
-| Name | GitHub Profile | Favorite Language |
+| Nishanth Reddy| mamidinishanthreddy| Favorite Language |
 | :--- | :--- | :--- |
-| Your Name | [@yourusername](https://github.com/yourusername) | markdown |
+| Nishanth Reddy | [@mamidinishanthreddy](https://github.com/mamidinishanthreddy) | markdown |
