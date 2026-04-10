@@ -1,2 +1,2 @@
 # hello.py
-print("Hello, FOSS WING! I am branching out.")
+print("Hello,FOSS wing! I am branching out.")
