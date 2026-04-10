@@ -70,12 +70,35 @@ git switch fix/ignore-secrets
 ```
 
 #### 6. Popping the Stash
-To get your half-baked code back, you just tell Git to open the box!
+To get your half-baked code back, tell Git to open the box:
 ```bash
 git stash pop
 ```
-`node_` is instantly restored, exactly in the half-done state you left it. Now you can finish adding node_modules to gitignore, add `modules`, and finally commit!
+`node_` is instantly restored in the exact half-done state you left it in. Now finish the line so `.gitignore` looks like this:
+```text
+.env
+node_modules
+```
+Save the file.
 
-After commiting, move on to the next step
+Stage and commit your completed work:
+```bash
+git add .gitignore
+git commit -m "chore: add node_modules to gitignore"
+```
+
+### 7. Push Your Branch and Open a Pull Request
+Push your branch to your fork:
+```bash
+git push -u origin fix/ignore-secrets
+```
+Go to GitHub and open a Pull Request:
+- **base repository**: the original upstream repo
+- **base**: `main`
+- **compare**: `fix/ignore-secrets`
+
+Your PR adds a `.gitignore` that protects secret API keys and prevents committing build artifacts — a real, practical improvement for any project!
+
+Click **"Create pull request"**. ✅
 
 ➡️ **Next Up:** [Module 7: Syncing Your Fork](./07-SYNCING-FORKS.md)
