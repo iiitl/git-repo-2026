@@ -1,1 +1,1 @@
-APP_ENVIRONMENT=developmentgit 
+APP_ENVIRONMENT=development
