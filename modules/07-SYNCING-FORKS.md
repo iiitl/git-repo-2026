@@ -49,11 +49,39 @@ git merge upstream/main
 *(Note: Some developers prefer `git rebase upstream/main` here to keep history strictly linear, but merge is perfectly fine for syncing main).*
 
 ### 5. Update Your Fork on GitHub
-Your *local* `main` is up to date, but your fork on GitHub (origin) is still out of date! Push your newly synced branch back up to your fork:
+Your *local* `main` is up to date, but your fork on GitHub (`origin`) is still behind! Push your freshly synced `main` up to your fork:
 ```bash
 git push origin main
 ```
+Your fork is now fully in sync. It is best practice to do this **every day** before you start working on a new feature branch.
 
- Boom! You are fully synced. It is a best practice to do this **every single day** before you create a new feature branch.
+### 6. Prove It: Open a PR from a Synced Fork
+Let's confirm everything works correctly by creating a branch and opening a small PR.
 
-➡️ **Next Up:** [Module 8: The PR Review Lifecycle](./08-CODE-REVIEWS.md)
+Create a new branch:
+```bash
+git switch -c sync/verify-<your-username>
+```
+Create a new folder called `sync-notes/` inside the repo, and add a file named `<your-username>.md` inside it with this content:
+```markdown
+# Sync Verified
+
+- **Username:** <your-username>
+- **Date synced:** <today's date>
+```
+Stage, commit, and push:
+```bash
+git add .
+git commit -m "chore: verify fork sync for <your-username>"
+git push -u origin sync/verify-<your-username>
+```
+Go to GitHub and open a Pull Request:
+- **base repository**: the original upstream repo
+- **base**: `main`
+- **compare**: `sync/verify-<your-username>`
+
+Click **"Create pull request"**. ✅
+
+This PR proves your fork was properly synced before branching — a clean, conflict-free workflow!
+
+🎉 **You have completed all modules!** You now have a fully synced fork and the skills to contribute to any open-source project with confidence.
