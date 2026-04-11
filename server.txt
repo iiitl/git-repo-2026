@@ -1,2 +1,2 @@
 Port: 8080
-Connections: Disabledgit 
+Connections: Allowed
