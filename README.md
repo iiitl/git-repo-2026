@@ -13,7 +13,6 @@ We have broken down the training into bite-sized modules:
 - [Module 5: Time Travel (Reverts & Resets)](./modules/05-TIME-TRAVEL.md)
 - [Module 6: Stashing & Ignoring Files](./modules/06-STASHING-AND-IGNORE.md)
 - [Module 7: Syncing Your Fork](./modules/07-SYNCING-FORKS.md)
-- [Module 8: The PR Review Lifecycle](./modules/08-CODE-REVIEWS.md)
 
 ## 🛠 Getting Started
 
