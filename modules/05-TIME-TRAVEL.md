@@ -44,26 +44,48 @@ Run:
 git revert <bad-commit-hash>
 ```
 
-Git will automatically generate a new commit called `Revert "fix: improved server security by disabling connections"`. This doesn't permanently delete the bad commit from history. It writes down the correction moving forward. This is the safest way to fix open-source PR mistakes!
+Git will open your default text editor to write a commit message. It pre-fills it with `Revert "fix: improved server security by disabling connections"`. Save and close the editor to confirm. This creates a **new** commit that undoes the bad one — the bad commit stays in history (for auditability), but its effects are cancelled out. This is the safest way to fix open-source PR mistakes.
 
-### 4. Hard Reset (Going Back in Time Unsafely)
-Sometimes, you haven't published your code yet, and you just want to obliterate a commit completely from your local history.
+### 4. Push Your Branch and Open a Pull Request
+Your branch now tells a complete, honest story: the original config was created, a bad change was introduced, and a revert commit safely undid it.
 
-Make *another* terrible commit to `server.txt`:
+Push the branch to your fork:
+```bash
+git push -u origin feature/time-travel
+```
+Go to GitHub and open a Pull Request:
+- **base repository**: the original upstream repo
+- **base**: `main`
+- **compare**: `feature/time-travel`
+
+In your PR description, note: *"Used `git revert` to safely undo a bad commit while preserving full history."*
+
+Click **"Create pull request"**. ✅
+
+---
+
+## 💡 Bonus Concept: Hard Reset (Dangerous, Local Only)
+
+Sometimes you haven't pushed your code yet and you want to completely erase a bad commit from your local history — as if it never happened. This is a **destructive** operation. It is safe only when the commits have **not** been pushed to any remote.
+
+### 5. Hard Reset (Going Back in Time Unsafely)
+Make *another* terrible commit to `server.txt`. Change the Port line:
 ```text
 Port: NaN
 ```
 Commit it: `git commit -am "feat: made ports infinite"`
 
-Now, instead of reverting it, let's rewind time using a **Hard Reset**. First, figure out where you *want* to be, using your commit log:
+Now, instead of reverting, let's rewind time. First, find the commit you want to go back to:
 ```bash
 git log --oneline
 ```
-Find the ID of the commit BEFORE your terrible infinity port commit. Then run:
+Find the hash of the commit **before** your "infinite port" commit (the revert commit from step 3). Then reset to it:
 
 ```bash
 git reset --hard <safe-commit-hash>
 ```
-Your local files will immediately reset. The bad commit is permanently erased from your timeline! 
+Your local files reset instantly. The bad commit is permanently erased from your local timeline.
+
+> **Warning:** Never use `git reset --hard` on commits you have already pushed to a shared remote. It rewrites history and will cause problems for everyone else working on that branch. Use `git revert` instead (as you did in step 3) when history is already public.
 
 ➡️ **Next Up:** [Module 6: Stashing & Ignoring](./06-STASHING-AND-IGNORE.md)
