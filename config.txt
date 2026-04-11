@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+APP_ENVIRONMENT=development
+=======
+APP_ENVIRONMENT=staging
+>>>>>>> change-b
