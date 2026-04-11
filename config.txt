@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 APP_ENVIRONMENT=development
+=======
+APP_ENVIRONMENT=staging
+>>>>>>> teammate/update-config
