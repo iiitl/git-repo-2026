@@ -79,12 +79,27 @@ feat: add core math algorithms
 Save and close this file.
 
 ### 6. The Reveal
-Run `git log --oneline` again. Boom! Your messy history is gone, replaced with a single, professional commit. 
+Run `git log --oneline` again. Your messy history is gone, replaced with a single, professional commit.
 
-Push it up:
+### 7. Push and Open a Pull Request
+Push your clean squashed branch to your fork:
 ```bash
-# If you had already pushed the branch, you would need to force push:
-# git push origin feature/squash-practice --force
+git push -u origin feature/squash-practice
 ```
+
+> **If you pushed earlier commits before squashing:** Squashing rewrites history (the commit hash changes), so GitHub will reject a standard push because your local and remote histories no longer match. Use a **force push** instead:
+> ```bash
+> git push origin feature/squash-practice --force
+> ```
+> This is safe here because you are the only one working on this branch.
+
+Go to GitHub and open a Pull Request:
+- **base repository**: the original upstream repo
+- **base**: `main`
+- **compare**: `feature/squash-practice`
+
+Notice that your PR shows exactly **one** clean, descriptive commit instead of three messy ones — this is exactly what open-source maintainers love to see.
+
+Click **"Create pull request"**. ✅
 
 ➡️ **Next Up:** [Module 5: Time Travel](./05-TIME-TRAVEL.md)
