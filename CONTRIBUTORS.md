@@ -6,4 +6,3 @@ Welcome to our Hall of Fame! Add your name below as part of your first PR.
 | :--- | :--- | :--- |
 | Your Name | [@yourusername](https://github.com/yourusername) | markdown |
 | satwik | [@satwikbavurupudi](https://github.com/satwikbavurupudi) | markdown |
-
