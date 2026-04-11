@@ -53,8 +53,24 @@ git push -u origin add-name-<your-username>
 ```
 
 ### 6. Open a Pull Request!
-Go to GitHub, and you'll see a green "Compare & pull request" button. Click it, review your changes, and submit the PR.
+Go to your browser and navigate to **your fork** on GitHub:
+```
+https://github.com/<YOUR_USERNAME>/git-repo-2026
+```
 
-Congratulations, you've completed your first open-source style contribution!
+You will see a yellow banner at the top saying **"Your recently pushed branches:"** with a green **"Compare & pull request"** button next to your branch name. Click it.
+
+On the Pull Request creation page, check these settings **before** clicking submit:
+
+- **base repository** → must be the **original** repo (e.g., `<ORIGINAL_OWNER>/git-repo-2026`), **not** your own fork
+- **base** → `main`
+- **head repository** → your fork (`<YOUR_USERNAME>/git-repo-2026`)
+- **compare** → `add-name-<your-username>`
+
+> If the base repository is set to your own fork by default, click **"compare across forks"** to switch it to the original upstream repo.
+
+Give your PR a clear title like `docs: add <your-username> to contributors list`, add a short description of what you changed, and click **"Create pull request"**.
+
+Congratulations — you have opened your first Pull Request! 🎉
 
 ➡️ **Next Up:** [Module 2: Branching & Merging](./02-BRANCHING-MERGING.md)
