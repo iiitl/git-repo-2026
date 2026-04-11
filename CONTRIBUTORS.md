@@ -5,4 +5,4 @@ Welcome to our Hall of Fame! Add your name below as part of your first PR.
 | Name | GitHub Profile | Favorite Language |
 | :--- | :--- | :--- |
 | Your Name | [@yourusername](https://github.com/yourusername) | markdown |
-| Your Name | [@msairitvik](https://github.com/msairitvik) | markdown |
+| Sai Ritvik | [@msairitvik](https://github.com/msairitvik) | markdown |
