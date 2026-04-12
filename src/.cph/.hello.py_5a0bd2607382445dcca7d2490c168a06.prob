@@ -1,0 +1,1 @@
+{"name":"Local: hello","url":"c:\\Users\\devil\\Desktop\\FOSS\\git-repo-2026\\src\\hello.py","tests":[{"id":1775973349419,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\devil\\Desktop\\FOSS\\git-repo-2026\\src\\hello.py","group":"local","local":true}
