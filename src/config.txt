@@ -1,1 +1,1 @@
-APP_ENVIRONMENT=development
+APP_ENVIRONMENT=production
